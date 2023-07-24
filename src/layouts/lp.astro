@@ -55,6 +55,8 @@ let hasVideo = props.embedCode || props.ytLink
 
             {vslCta && <CtaVsl time={vslCtaTime} link={vslCtaLink} pos={props.vslPosCta} set:html={vslCta}/>}
 
+            
+
             {Astro.slots.has('subpromessa') && <h2 class="md:max-w-screen-md mb-8 empty:hidden"><slot name="subpromessa"/></h2>}
         </section>
         </div>
