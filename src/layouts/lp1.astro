@@ -53,7 +53,7 @@ let hasVideo = props.embedCode || props.ytLink
 
             {hasVideo && ( props.embedCode ? <div class="flex justify-center" set:html={props.embedCode} /> : <YTvideo link={props.ytLink} /> )}
 
-            <div class="flex justify-center md:max-w-screen-md"><img src={props.img2} alt="destaque"></div>
+            {props.img2 && <div class="flex justify-center md:max-w-screen-md"><img src={props.img2} alt="destaque"></div>}
 
             {vslCta && <CtaVsl time={vslCtaTime} link={vslCtaLink} pos={props.vslPosCta} set:html={vslCta}/>}
 
