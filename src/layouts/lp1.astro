@@ -15,6 +15,8 @@ import Banner from "@components/banner/upsell.astro" //up
 import YTvideo from "@components/ytVideo.astro" //vsl
 import CtaVsl from "@components/ctaVsl.astro" //vsl
 
+import Contato from "@components/forms/simples.astro"
+
 let props = Astro.props.frontmatter
 
 let { exibeBanner, bannerBarTxt, bannerMainTxt, bannerBarSize }=props //up
@@ -54,6 +56,8 @@ let hasVideo = props.embedCode || props.ytLink
             {hasVideo && ( props.embedCode ? <div class="flex justify-center" set:html={props.embedCode} /> : <YTvideo link={props.ytLink} /> )}
 
             {props.img2 && <div class="flex justify-center md:max-w-screen-md"><img src={props.img2} alt="destaque"></div>}
+
+            
 
             {vslCta && <CtaVsl time={vslCtaTime} link={vslCtaLink} pos={props.vslPosCta} set:html={vslCta}/>}
 
@@ -189,6 +193,11 @@ let hasVideo = props.embedCode || props.ytLink
             </div>
             </section>
         </div>
+
+
+    <!-- <Contato/> -->
+
+
 
         <!-- Último CTA -->
         <!-- <section id="ultimo-cta" class="py-32" data-theme="dark">
