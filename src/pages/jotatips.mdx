@@ -1,0 +1,102 @@
+---
+title: Aplicativo de Sinais | Jota Investimentos
+description: "Receba os principais sinais da nossa inteligência artificial diretamente no seu celular pelo nosso aplicativo de sinais"
+
+precoDe: 197,00
+preco: 9,90
+
+tema: emerald #dark, emerald, bumblebee ou corporate
+persist: true
+temaDestaque: dark #apenas dark, por enquanto
+temaCitacao: bumblebee #dark, emerald, bumblebee ou corporate
+# temaOferta: dark #dark, emerald, bumblebee ou corporate
+
+exibePrecoAposPromessa: false
+
+# provaSocial:
+# - {img: "/fotos/pessoa2.webp", texto: "Excelente! O curso X foi um divisor de águas. Em apenas T meses, eu fui de A para B", nome: "Pessoa 1" }
+# - {img: "/fotos/pessoa2.webp", texto: "Excelente! O curso X foi um divisor de águas. Em apenas T meses, eu fui de A para B", nome: "Pessoa 2" }
+# - {img: "/fotos/pessoa1.webp", texto: "Excelente! O curso X foi um divisor de águas. Em apenas T meses, eu fui de A para B", nome: "Pessoa 3" }
+
+beneficiosTitle: O que você vai ter acesso…
+beneficios:
+    - "Sala de sinais grátis semanais"
+    - "Análises ao vivo com nosso CEO"
+    - "Mais de 90% de taxa de acerto"
+
+# Lista de Conteúdos está no corpo do arquivo
+# Lista de Bônus está no corpo do arquivo
+
+ofertaChamada: "Aproveite os últimos dias da promoção:"
+beneficiosOferta:
+    - "Sala de sinais grátis"
+    - "Análises ao vivo com nosso CEO"
+    - "Mais de 90% de taxa de acerto"
+    - "Mentoria semanal grátis"
+
+
+# embedCode: <link href="https://widget.groovevideo.com/widget/app.css" rel="stylesheet"><groovevideo-widget id="209841" permalink="t7dvBoSkhivDJAX5fFLI"></groovevideo-widget><script src="https://widget.groovevideo.com/widget/app.js"></script>
+#ytLink: https://www.youtube.com/watch?v=_ZZjEsejD2Y
+#ytAltura: 720
+#ytLargura: 1200
+vslCta: Quero começar agora!
+vslCtaLink: https://t.me/jotainvestimentos
+vslCtaTime: 0 #tempo em segundos, a partir do carregamento da página
+
+cta: Quero começar agora!
+ctaLink: https://t.me/jotainvestimentos
+# img2: /fotos/praia.webp
+---
+import Layout from "@layouts/lp2.astro"
+import Degrade from "@components/colorText/span.astro"
+import Card from "@components/cards/emojiAndH3.astro"
+import Check from "@assets/icons/roundCheckmark.astro"
+import img1 from "@assets/praia.webp"
+
+
+<Layout frontmatter={frontmatter} >
+
+<Fragment slot="pre-promessa">- ACESSO GRÁTIS <span class="text-white">⚡</span> -</Fragment>
+<Fragment slot="promessa">Curso Gratuito + Sala de Sinais</Fragment>
+<Fragment slot="subpromessa">Grupo  <Degrade grad="blue">**Privado**</Degrade> de sinais onde eu consigo prever a próxima **RODADA** + <Degrade grad="yellow">Curso Gratuito</Degrade> ensinando a alavancar em até <Degrade grad="green">**100x sua conta**</Degrade>.</Fragment>
+
+{/* Aqui nesta parte entra a lista de benefícios, que foi toda colocada no cabeçalho */}
+
+<Fragment slot="citacao">
+_"Consultoria 100% grátis"_
+</Fragment>
+
+<Fragment slot="bonusTitulo">RECEBA AGORA MESMO</Fragment>
+<Fragment slot="bonus">
+    <Card emoji="👩🏾‍💻" h3size="big" precoDe="R$ 97,00" precoPor="R$ 0">
+        <Fragment slot="h3">Curso completo</Fragment>
+        <>Vamos de dar um treinamento completo para aprender a copiar nossos sinais e gerenciar seu capital totalmente grátis.</>
+    </Card>
+
+    <Card emoji="📩" h3size="big" precoDe="R$ 200,00" precoPor="R$ 0">
+        <Fragment slot="h3">Sala de sinais</Fragment>
+        <ul class="[&>li]:flex [&>li]:items-center [&>li]:mb-4">
+            <li><Check/> Com 90% de taxa de acerto</li>
+            <li><Check/> Lives semanais com calls ao vivo</li>
+            <li><Check/> Nossas dicas para o mercado.</li>
+        </ul>
+    </Card>
+
+</Fragment>
+
+
+{/* A Chamada e os benefícios da Oferta estão na frontmatter */}
+<Fragment slot="textoAposCta">
+Totalmente grátis.
+
+Oferta especial por tempo limitado, 
+
+o preço aumentará em breve.
+</Fragment>
+
+
+
+
+
+
+</Layout>
