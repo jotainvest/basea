@@ -1,0 +1,97 @@
+---
+title: Curso e sala de sinais grátis | Jota Investimentos
+description: "Descrição da Página que vai aparecer no google e quando o link for compratilhado no whatsapp, twitter, etc. Mantenha abaixo de 160 caracteres"
+
+precoDe: 197,00
+preco: 0,00
+
+tema: emerald #dark, emerald, bumblebee ou corporate
+persist: true
+temaDestaque: dark #apenas dark, por enquanto
+temaCitacao: bumblebee #dark, emerald, bumblebee ou corporate
+# temaOferta: dark #dark, emerald, bumblebee ou corporate
+
+exibePrecoAposPromessa: false
+
+# provaSocial:
+# - {img: "/fotos/pessoa2.webp", texto: "Excelente! O curso X foi um divisor de águas. Em apenas T meses, eu fui de A para B", nome: "Pessoa 1" }
+# - {img: "/fotos/pessoa2.webp", texto: "Excelente! O curso X foi um divisor de águas. Em apenas T meses, eu fui de A para B", nome: "Pessoa 2" }
+# - {img: "/fotos/pessoa1.webp", texto: "Excelente! O curso X foi um divisor de águas. Em apenas T meses, eu fui de A para B", nome: "Pessoa 3" }
+
+beneficiosTitle: O que você vai ter acesso…
+beneficios:
+    - "Curso de gestão de banca profissional"
+    - "Robô de sinal vitalício no Telegram"
+    - "Curso de alavancagem de banca 100X"
+
+# Lista de Conteúdos está no corpo do arquivo
+# Lista de Bônus está no corpo do arquivo
+
+ofertaChamada: "Abra sua conta pelo nosso link de indicação e receba todos os bônus"
+beneficiosOferta: false
+
+# embedCode: <link href="https://widget.groovevideo.com/widget/app.css" rel="stylesheet"><groovevideo-widget id="209841" permalink="t7dvBoSkhivDJAX5fFLI"></groovevideo-widget><script src="https://widget.groovevideo.com/widget/app.js"></script>
+#ytLink: https://www.youtube.com/watch?v=_ZZjEsejD2Y
+#ytAltura: 720
+#ytLargura: 1200
+vslCta: ABRA SUA CONTA!
+vslCtaLink: https://jinvt.in/casa
+vslCtaTime: 0 #tempo em segundos, a partir do carregamento da página
+
+cta: ABRA SUA CONTA
+ctaLink: https://jinvt.in/casa
+# img2: /fotos/praia.webp
+---
+import Layout from "@layouts/lp4.astro"
+import Degrade from "@components/colorText/span.astro"
+import Card from "@components/cards/emojiAndH3.astro"
+import Check from "@assets/icons/roundCheckmark.astro"
+import img1 from "@assets/praia.webp"
+
+
+<Layout frontmatter={frontmatter} >
+
+<Fragment slot="pre-promessa">- <span class="text-white">🚀</span>bônus exclusivos<span class="text-white">🚀</span> -</Fragment>
+<Fragment slot="promessa">Abra sua conta e ganhe bônus</Fragment>
+<Fragment slot="subpromessa">Abra uma **nova conta** na casa para receber um <Degrade grad="blue">**robô de sinais**</Degrade> no telegram com alta taxa de acerto + nosso **CURSO COMPLETO** para aprender a <Degrade grad="yellow">gerenciar sua banca</Degrade> e o treinamento ensinando a alavancar em até <Degrade grad="green">**100x sua banca**</Degrade> do zero.</Fragment>
+
+{/* Aqui nesta parte entra a lista de benefícios, que foi toda colocada no cabeçalho */}
+
+<Fragment slot="citacao">
+_"Consultoria 100% grátis"_
+</Fragment>
+
+<Fragment slot="bonusTitulo">RECEBA AGORA MESMO</Fragment>
+<Fragment slot="bonus">
+    <Card emoji="👩🏾‍💻" h3size="big" precoDe="R$ 97,00" precoPor="R$ 0">
+        <Fragment slot="h3">Curso completo</Fragment>
+        <>Vamos de dar um treinamento completo para aprender a copiar nossos sinais e gerenciar seu capital totalmente grátis.</>
+    </Card>
+
+    <Card emoji="📩" h3size="big" precoDe="R$ 200,00" precoPor="R$ 0">
+        <Fragment slot="h3">Sala de sinais</Fragment>
+        <ul class="[&>li]:flex [&>li]:items-center [&>li]:mb-4">
+            <li><Check/> Com 90% de taxa de acerto</li>
+            <li><Check/> Lives semanais com calls ao vivo</li>
+            <li><Check/> Nossas dicas para o mercado.</li>
+        </ul>
+    </Card>
+
+</Fragment>
+
+
+{/* A Chamada e os benefícios da Oferta estão na frontmatter */}
+<Fragment slot="textoAposCta">
+Totalmente grátis.
+
+Bônus exclusivo para novas contas, 
+
+e mais um bônus secreto.
+</Fragment>
+
+
+
+
+
+
+</Layout>
