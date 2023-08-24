@@ -71,6 +71,10 @@ let hasVideo = props.embedCode || props.ytLink
             <p class="text-8xl font-black uppercase mb-4 text-green-600">R$ {props.preco}</p>
             <p class="text-2xl font-bold uppercase mb-8">- risco zero! -</p>
             <div class="divider my-4"></div>
+
+
+            {vslCta && <CtaVsl time={vslCtaTime} link={vslCtaLink} pos={props.vslPosCta} set:html={vslCta}/>}
+            
         </section>}
 
         <!-- Prova Social -->
